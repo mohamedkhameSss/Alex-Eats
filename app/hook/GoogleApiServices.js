@@ -2,7 +2,7 @@ import axios from "axios"
 
 
 const calculateDistanceAndTime = async (startLat, startLng, destinationLat, destinationLng, mode = 'bicycling') => {
-    const apiKey = ""; // Replace with your API Key
+    const apiKey = "AIzaSyDwpbOb_f5eWw6StEL20lZTGfdCBD0BuwM"; // Replace with your API Key
     const baseUrl = "https://maps.googleapis.com/maps/api/distancematrix/json?";
     const ratePerKm = 1; 
 

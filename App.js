@@ -12,6 +12,8 @@ import { UserReversedGeoCode } from './app/context/UserReversedGeoCode';
 import FoodNavigator from './app/components/FoodNavigator';
 import RestaurantPage from './app/navigation/RestaurantPage';
 import Restaurant from './app/restaurant/Restaurant';
+import AddRating from './app/screens/AddRating';
+
 const Stack = createNativeStackNavigator();
 export default function App() {
   const [location,setLocation]=useState(null);
@@ -79,6 +81,11 @@ export default function App() {
         <Stack.Screen
           name='restaurant'
           component={Restaurant}
+          options={{ headerShown: false }}
+          />
+        <Stack.Screen
+          name='rating'
+          component={AddRating}
           options={{ headerShown: false }}
           />
       </Stack.Navigator>
